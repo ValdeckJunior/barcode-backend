@@ -21,21 +21,21 @@
 
 ### 1. Clone the Repository
 
-```pwsh
-git clone [https://github.com/ValdeckJunior/barcode-backend](https://github.com/ValdeckJunior/barcode-backend)
+```bash
+git clone https://github.com/ValdeckJunior/barcode-backend
 cd barcode-backend
 ```
 
 ### 2. Install Dependencies
 
-```pwsh
+```bash
 bun install
 ```
 
 ### 3. PostgreSQL Database Setup
 
 - **Create the database:**
-  ```pwsh
+  ```bash
   psql -U postgres -c "CREATE DATABASE qr_campus;"
   ```
 - **Update your `.env` file** with the correct connection string:
@@ -45,19 +45,19 @@ bun install
 
 ### 4. Run Database Migrations
 
-```pwsh
+```bash
 npx prisma migrate dev
 ```
 
 ### 5. Seed the Database
 
-```pwsh
+```bash
 psql -U postgres -d qr_campus -f prisma/seed.sql
 ```
 
 ### 6. Start the Server
 
-```pwsh
+```bash
 bun run dev
 ```
 
