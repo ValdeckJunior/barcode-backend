@@ -22,7 +22,7 @@
 ### 1. Clone the Repository
 
 ```pwsh
-git clone https://github.com/ValdeckJunior/barcode-backend
+git clone [https://github.com/ValdeckJunior/barcode-backend](https://github.com/ValdeckJunior/barcode-backend)
 cd barcode-backend
 ```
 
